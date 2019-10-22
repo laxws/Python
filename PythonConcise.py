@@ -11,9 +11,9 @@ def radius():
             restart = input("Would you like to calculate another radius?: \n(YES/Y) or (NO/N) :")
             if restart.upper() == "YES" or restart.upper() == "Y":
                 radius()
-            if restart.upper() == "NO" or restart.upper() == "N":
+            if restart.upper() == "NO" or restart.upper() == "YES":
                 print("Script terminating. Goodbye.")
-            if restart.upper() != "YES" or restart.upper() != "NO":
+            if restart.upper() != "Y" or restart.upper() != "N":
                 restart()
         restart()
     except ValueError:
